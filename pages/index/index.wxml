@@ -1,0 +1,72 @@
+<HdView></HdView>
+<view class="banner">
+  <swiper indicator-dots indicator-color="rgba(255,255,255,.5)" indicator-active-color="#fff" autoplay circular interval="1500">
+    <swiper-item><image src="/images/banner1.jpg"/></swiper-item>
+    <swiper-item><image src="/images/banner2.jpg"/></swiper-item>
+    <swiper-item><image src="/images/banner3.jpg"/></swiper-item>
+  </swiper>
+</view>
+
+<scroll-view class="major" scroll-x>
+  <view class="majorCon">
+    <navigator class="box" open-type="navigate" url="/pages/ps/ps">
+      <image class="pic" src="/images/kecheng1.png"/>
+      <view class="txt">平面设计</view>
+    </navigator>
+    <navigator class="box" url="">
+      <image class="pic" src="/images/kecheng2.png"/>
+      <view class="txt">室内设计</view>
+    </navigator>
+    <navigator class="box" url="">
+      <image class="pic" src="/images/kecheng3.png"/>
+      <view class="txt">UI设计</view>
+    </navigator>
+    <navigator class="box" url="">
+      <image class="pic" src="/images/kecheng4.png"/>
+      <view class="txt">影视后期</view>
+    </navigator>
+    <navigator class="box" url="">
+      <image class="pic" src="/images/kecheng5.png"/>
+      <view class="txt">WEB前端</view>
+    </navigator>
+  </view>
+</scroll-view>
+
+<view class="works">
+  <view class="container">
+    <PubTitle Title="学员作品" Url="/pages/works/works"></PubTitle>
+    <view class="wkMain">
+      <navigator class="box" wx:for="{{StudentWorkList}}" wx:key="index">
+        <image class="pic" src="{{item.pic}}" />
+        <view class="greyHover">
+          <view class="title">{{item.title}}</view>
+          <view class="line"></view>
+          <view class="desc">{{item.desc}}</view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>
+
+<view class="dynamic">
+  <view class="container">
+    <PubTitle Title="行业动态" Url="/pages/dynamic/dynamic"></PubTitle>
+    <view class="dyMain">
+      <navigator class="dyItem" wx:for="{{dynamicList}}" wx:key="index">
+        <view class="pic">
+          <image src="{{item.picurl}}"></image>
+        </view>
+        <view class="txt">
+          <view class="title">
+            {{item.title}}
+          </view>
+          <view class="info">
+            <text>作者：</text>{{item.author}}<text space="ensp">  -  </text><text>时间：</text>{{item.posttime}}
+          </view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>
+
+<FtView></FtView>

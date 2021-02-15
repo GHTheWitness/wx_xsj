@@ -1,0 +1,21 @@
+<HdView></HdView>
+<view class="dynamic">
+    <view class="dyMain">
+      <navigator class="dyItem" wx:for="{{dyLists}}" wx:key="index">
+        <view class="pic">
+          <image src="{{item.picurl}}"></image>
+        </view>
+        <view class="txt">
+          <view class="title">
+            {{item.title}}
+          </view>
+          <view class="info">
+            <text>作者：</text>{{item.author}}<text space="ensp">  -  </text><text>时间：</text>{{item.posttime}}
+          </view>
+        </view>
+      </navigator>
+    </view>
+    <Loading myLoading="{{onLoading}}"></Loading>
+</view>
+
+<FtView></FtView>

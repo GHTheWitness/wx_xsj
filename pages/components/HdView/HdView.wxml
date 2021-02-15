@@ -1,0 +1,11 @@
+<view class="header">
+  <view class="container hdCon">
+    <navigator open-type="switchTab" url="/pages/index/index" class="logo">
+      <image class="pic" mode="heightFix" src="/images/logo.png"></image>
+    </navigator>
+    <navigator class="cservice">
+      <button class="btn" open-type="contact"></button>
+      <image class="pic" mode="heightFix" src="/images/xiaoxi.png"></image>
+    </navigator>
+  </view>
+</view>

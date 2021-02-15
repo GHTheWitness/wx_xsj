@@ -1,0 +1,32 @@
+<HdView></HdView>
+<scroll-view class="ScollTitle" scroll-x>
+  <view class="worksTitle">
+    <view class="box {{index==navIdx?'active':''}}" bindtap="clickNav" data-id="{{item.id}}" data-idx="{{index}}" wx:for="{{navLists}}" wx:key="index">
+      <block wx:if="{{item.id==17}}">
+        全部
+      </block>
+      <block wx:else>
+        {{item.classname}}
+      </block>
+    </view>
+  </view>
+</scroll-view>
+
+<view class="worksMain">
+  <navigator wx:for="{{WkList}}" wx:key="index">
+    <view class="card">
+      <view class="card-img"><image src="{{item.picurl}}"></image></view>
+      <view class="card-desc">{{item.title}}</view>
+      <view class="card-footer">
+        <view class="left">{{item.classname}}</view>
+        <view class="right">
+          <image src="/images/look.png"></image>
+          <text>{{item.hits}}</text>
+        </view>
+      </view>
+    </view>
+  </navigator>
+  <Loading myLoading="{{onLoaded}}"></Loading>
+</view>
+
+<FtView></FtView>

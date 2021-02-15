@@ -1,0 +1,68 @@
+.ScollTitle {
+  box-shadow: 0px 1px 1px #02020221;
+}
+.worksTitle {
+  display: flex;
+  box-sizing: border-box;
+  justify-items: center;
+}
+.worksTitle .box {
+  text-align: center;
+  width: 170rpx;
+  flex: 0 0 auto;
+  font-size: 27rpx;
+  padding: 15rpx 10rpx;
+}
+.worksTitle .active {
+  border-bottom: 1px solid green;
+  border-bottom-width: 4rpx;
+  color: green;
+}
+.worksMain {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20rpx 10rpx;
+}
+.card {
+  width: 353rpx;
+  height: 380rpx;
+  position: relative;
+  border-radius: 10rpx;
+  margin-bottom: 15rpx;
+  box-shadow: 0 2rpx 5rpx rgba(88, 88, 88, 0.5);
+}
+.card .card-img {
+  height: 55%;
+  border-radius: 10rpx;
+}
+.card .card-img image {
+  border-radius: 10rpx 10rpx 0rpx 0rpx;
+  width: 100%;
+  height: 100%;
+}
+.card .card-desc {
+  padding: 10rpx 10rpx;
+  font-size: 25rpx;
+  letter-spacing: 5rpx;
+}
+.card .card-footer {
+  padding: 10rpx 10rpx;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 24rpx;
+  color: rgba(118, 118, 118, 0.8);
+  align-items: center;
+}
+.card .card-footer .right {
+  display: flex;
+  vertical-align: middle;
+}
+.card .card-footer .right image {
+  width: 35rpx;
+  height: 30rpx;
+}

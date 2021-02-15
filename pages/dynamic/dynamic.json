@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "HdView":"../components/HdView/HdView",
+    "FtView":"../components/FtView/FtView",
+    "Loading":"../components/Loading/Loading"
+  },
+  "enablePullDownRefresh":true,
+  "backgroundColor":"#eee",
+  "navigationBarTitleText":"行业动态信息"
+}

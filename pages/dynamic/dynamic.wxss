@@ -1,0 +1,32 @@
+.dynamic {
+  padding: 0rpx 0 70rpx;
+}
+.dynamic .dyItem {
+  display: flex;
+  padding: 15rpx 0;
+  border: 1rpx dashed #eee;
+  justify-content: space-between;
+}
+.dynamic .dyItem .pic {
+  width: 230rpx;
+  height: 150rpx;
+}
+.dynamic .dyItem .pic image {
+  width: 100%;
+  height: 150rpx;
+}
+.dynamic .dyItem .txt {
+  width: 480rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.dynamic .dyItem .txt .title {
+  font-size: 34rpx;
+}
+.dynamic .dyItem .txt .info {
+  font-size: 26rpx;
+}
+.dynamic .dyItem .txt text {
+  font-size: 22rpx;
+}
